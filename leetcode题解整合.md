@@ -1,24 +1,22 @@
-# LeetCode题解整合
+
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=3 orderedList=true} -->
 <!-- code_chunk_output -->
+<dir align=center>LeetCode题解整合</dir>
 
-[序](#序)
-[链表](#链表)
-- [61.旋转链表](#61.旋转链表)
-- [141.环形链表](#141.环形链表)
-
-[双指针](#双指针)
-[回溯算法](#回溯算法)
+[TOC]
 
 ## 序
 开个坑做一些自己写的题解的整合，慢慢搞。
 
 
 ## 链表
+
+ <a name="旋转链表"></a>
+
 ### 61.旋转链表
 [题目链接](https://leetcode-cn.com/problems/rotate-list/)
 
-#### 题目分析
+**题目分析**
 其实题干描述已经为此题降低了很多难度，即旋转链表可以等效为链表整体向右移动。
 
 首先考虑向右移动的次数`k`，考虑`k`的值可能超过链表总长度，因此需要遍历一遍链表来获取链表长度`num`。
@@ -49,9 +47,8 @@ while (temp->next != NULL){
 temp_next = head;
 
 ```
-#### 题目解答
-
-```c
+**题目解答**
+```C++
 struct ListNode* rotateRight(struct ListNode* head, int k){
     if (head == NULL) return NULL;
     if (head->next == NULL) return head;
@@ -86,15 +83,15 @@ struct ListNode* rotateRight(struct ListNode* head, int k){
 ### 141.环形链表
 [题目链接](https://leetcode-cn.com/problems/linked-list-cycle/)
 
-#### 题目分析
+**题目分析**
 第一时间想到使用快慢指针，设置指针`p1`,每次迭代向前移动一位；指针`p2`,每次迭代向前移动两位。
 
 两个指针若有一个为空，则表示该链表无环，终止迭代，输出`flase`；
 
 两个指针若在迭代过程中相等，则表示有环，终止迭代，输出`true`。
 
-#### 题目解答
-```c
+**题目解答**
+```c++
 typedef struct ListNode* list;
 bool hasCycle(struct ListNode *head) {
     if (head == NULL || head->next == NULL) return false;
