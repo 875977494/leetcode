@@ -1,17 +1,20 @@
 # LeetCode题解整合
-<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=3 orderedList=false} -->
+<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=3 orderedList=true} -->
 <!-- code_chunk_output -->
 
-* [序](#序)
-* [链表](#链表)
-    * [61.旋转链表](##61.旋转链表)
-* [双指针](#双指针)
-* [回溯算法](#回溯算法)
+[序](#序)
+[链表](#链表)
+- [61.旋转链表](#61.旋转链表)
+- [141.环形链表](#141.环形链表)
+
+[双指针](#双指针)
+[回溯算法](#回溯算法)
 
 ## 序
+开个坑做一些自己写的题解的整合，慢慢搞。
+
 
 ## 链表
-
 ### 61.旋转链表
 [题目链接](https://leetcode-cn.com/problems/rotate-list/)
 
@@ -77,6 +80,43 @@ struct ListNode* rotateRight(struct ListNode* head, int k){
     p2->next = NULL;
     
     return p1;
+}
+```
+
+### 141.环形链表
+[题目链接](https://leetcode-cn.com/problems/linked-list-cycle/)
+
+#### 题目分析
+第一时间想到使用快慢指针，设置指针`p1`,每次迭代向前移动一位；指针`p2`,每次迭代向前移动两位。
+
+两个指针若有一个为空，则表示该链表无环，终止迭代，输出`flase`；
+
+两个指针若在迭代过程中相等，则表示有环，终止迭代，输出`true`。
+
+#### 题目解答
+```c
+typedef struct ListNode* list;
+bool hasCycle(struct ListNode *head) {
+    if (head == NULL || head->next == NULL) return false;
+    list p1, p2;
+    p1 = head;
+    p2 = head;
+    // 设置标识，保证第一次迭代时不比较p1和p2
+    int flag = 0;
+
+    while (p1 != NULL && p2 != NULL){
+        if (flag == 0) flag = 1;
+        else {
+            if (p1 == p2) return true;
+        }
+        // 若p1或p2的下一位出现空指针，则说明无环
+        if (p1->next == NULL || p2->next == NULL) return false;
+        else{
+            p1 = p1->next;
+            p2 = p2->next->next;
+        }
+    }
+    return false;
 }
 ```
 
