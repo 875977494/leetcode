@@ -4,6 +4,7 @@
 <dir align=center>LeetCode题解整合</dir>
 
 [TOC]
+[[_TOC_]]
 
 ## 序
 开个坑做一些自己写的题解的整合，慢慢搞。
