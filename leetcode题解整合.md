@@ -3,7 +3,7 @@
 <!-- code_chunk_output -->
 <dir align=center>LeetCode题解整合</dir>
 
-[TOC]
+[Toc]
 
 ## 序
 开个坑做一些自己写的题解的整合，慢慢搞。
@@ -117,6 +117,29 @@ bool hasCycle(struct ListNode *head) {
 }
 ```
 
+### 237.删除链表中的结点
+[题目链接](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/)
 
-### 双指针
+**题目分析**
+这道题的难点其实是读题。
+
+其实我们的初始结点，就是需要被删除的结点。因此我们只需要将下一个结点的值赋给当前结点，删除下一个结点即可。（因为要被删除的结点不是必然不是末尾结点）
+**题目解答**
+```c++
+void deleteNode(struct ListNode* node) {
+    node->val = node->next->val;
+    node->next = node->next->next;
+}
+```
+
+## 数组
+
+## 双指针
+
+## 哈希表
+
+## 回溯算法
+
+## 树与二叉树
+
 
