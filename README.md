@@ -3,6 +3,8 @@
 
 [51.N皇后](https://github.com/875977494/LeetCode/blob/master/51.N%E7%9A%87%E5%90%8E.md)
 
+[52.N皇后II](https://github.com/875977494/LeetCode/blob/master/52.N%E7%9A%87%E5%90%8EII.md)
+
 [628.三个数的最大乘积](https://github.com/875977494/LeetCode/blob/master/628.%E4%B8%89%E4%B8%AA%E6%95%B0%E7%9A%84%E6%9C%80%E5%A4%A7%E4%B9%98%E7%A7%AF.md)
 
 [684.冗余连接](https://github.com/875977494/LeetCode/blob/master/684.%E5%86%97%E4%BD%99%E8%BF%9E%E6%8E%A5.md)
