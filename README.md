@@ -9,6 +9,8 @@
 
 [684.冗余连接](https://github.com/875977494/LeetCode/blob/master/684.%E5%86%97%E4%BD%99%E8%BF%9E%E6%8E%A5.md)
 
+[989. 数组形式的整数加法](https://github.com/ZhangYiqun018/LeetCode/blob/master/989.%20%E6%95%B0%E7%BB%84%E5%BD%A2%E5%BC%8F%E7%9A%84%E6%95%B4%E6%95%B0%E5%8A%A0%E6%B3%95.%20md)
+
 [1018. 可被 5 整除的二进制前缀](https://github.com/875977494/LeetCode/blob/master/1018.%20%E5%8F%AF%E8%A2%AB%205%20%E6%95%B4%E9%99%A4%E7%9A%84%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%89%8D%E7%BC%80.md)
 
 [1584.连接所有点的最小费用](https://github.com/875977494/LeetCode/blob/master/1584.%20%E8%BF%9E%E6%8E%A5%E6%89%80%E6%9C%89%E7%82%B9%E7%9A%84%E6%9C%80%E5%B0%8F%E8%B4%B9%E7%94%A8.md)
