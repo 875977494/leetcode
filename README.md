@@ -1,6 +1,8 @@
 # LeetCode
 开个坑 逐渐把题解搬进来
 
+[9.回文数]()
+
 [19.删除链表的倒数第N个结点](https://github.com/ZhangYiqun018/LeetCode/blob/master/19.%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC%20N%20%E4%B8%AA%E7%BB%93%E7%82%B9.md)
 
 [51.N皇后](https://github.com/875977494/LeetCode/blob/master/51.N%E7%9A%87%E5%90%8E.md)
@@ -18,6 +20,8 @@
 [674.最长连续递增序列]()
 
 [684.冗余连接](https://github.com/875977494/LeetCode/blob/master/684.%E5%86%97%E4%BD%99%E8%BF%9E%E6%8E%A5.md)
+
+[766.托普利茨矩阵]()
 
 [989. 数组形式的整数加法](https://github.com/ZhangYiqun018/LeetCode/blob/master/989.%20%E6%95%B0%E7%BB%84%E5%BD%A2%E5%BC%8F%E7%9A%84%E6%95%B4%E6%95%B0%E5%8A%A0%E6%B3%95.%20md)
 
