@@ -3,6 +3,7 @@
 <!-- code_chunk_output -->
 <dir align=center>LeetCode题解整合</dir>
 
+[Toc]
 [TOC]
 [[_TOC_]]
 
@@ -118,6 +119,191 @@ bool hasCycle(struct ListNode *head) {
 }
 ```
 
+### 237.删除链表中的结点
+[题目链接](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/)
 
-### 双指针
+**题目分析**
+这道题的难点其实是读题。
+
+其实我们的初始结点，就是需要被删除的结点。因此我们只需要将下一个结点的值赋给当前结点，删除下一个结点即可。（因为要被删除的结点不是必然不是末尾结点）
+**题目解答**
+```c++
+void deleteNode(struct ListNode* node) {
+    node->val = node->next->val;
+    node->next = node->next->next;
+}
+```
+
+## 数组
+
+### 1470. 重新排列数组
+[题目链接](https://leetcode-cn.com/problems/shuffle-the-array/)
+
+**题目分析**
+思路还是比较清晰的，设置两个指针`i`和`j`分别指向数组第`1`个元素和第`n+1`个元素。然后设置一个空数组，将两个元素加入空数组中。
+
+遍历过程：
+```c++
+while (j < nums.size()) {
+    res[count++] = nums[i++];
+    res[count++] = nums[j++];
+}
+```
+**复杂度分析**
+时间复杂度`O(N)`,空间复杂度`O(N)`。
+
+**题目解答**
+```c++
+class Solution {
+public:
+    vector<int> shuffle(vector<int>& nums, int n) {
+        vector<int> res(nums.size(), 0);
+        int i = 0;
+        int j = n;
+        int count = 0;
+        while (j < nums.size()) {
+            res[count++] = nums[i++];
+            res[count++] = nums[j++];
+        }
+        return res;
+    }
+};
+```
+
+
+## 双指针
+
+### 15.三数之和(未完成)
+[题目链接](https://leetcode-cn.com/problems/3sum/)
+
+**题目分析**
+
+
+**题目解答**
+```c++
+class Solution {
+private:
+    vector<vector<int>> res;
+    vector<int> temp;
+public:
+    vector<vector<int>> threeSum(vector<int>& nums) {
+        sort(nums.begin(), nums.end());
+        int left = 0, right = 0;
+        for (int i = 0; i < nums.size(); i++) {
+            if (nums[i] > 0) return res;
+            if (i > 0 && nums[i] == nums[i - 1]) continue;
+            left = i + 1;
+            right = nums.size() - 1;
+            while (left < right) {
+                int t = nums[i] + nums[left] + nums[right];
+                if (t == 0) {
+                    temp.push_back(nums[i]);
+                    temp.push_back(nums[left]);
+                    temp.push_back(nums[right]);
+                    res.push_back(temp);
+                    temp.clear();
+                    while (left < right && nums[left] == nums[left + 1]) left++;
+                    while (left < right && nums[right] == nums[right - 1]) right--;
+                    left++;
+                    right--;
+                }else if (t < 0) {
+                    left++;
+                }else right--;
+            }
+        }
+        return res;
+    }
+};
+```
+
+## 二分法
+### 1300. 转变数组后最接近目标值的数组和（未完成）
+[题目链接](https://leetcode-cn.com/problems/sum-of-mutated-array-closest-to-target/)
+
+**题目分析**
+显然需要先将原数组排序，排序后计算数组和`sum`，如果`sum <= target`，那么直接返回`arr.back()`；同样地，计算`arr[0] * arr.size()`，如果`arr[0] * arr.size() >= target`，那么直接返回`arr[0]`。
+```c++
+sort(arr.begin(), arr.end());
+int sum = 0;
+for (int a : arr) sum += a;
+if (sum <= target) return arr.back();
+if (arr[0] * arr.size() >= target) return arr[0];
+```
+
+
+
+**题目解答**
+
+## 哈希表
+### 1.两数之和(未完成)
+
+```c++
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        vector<int> res;
+        unordered_map<int, int> m;
+
+        for (int i = 0; i < nums.size(); i++) {
+            if (m.count(target - nums[i])) {
+                res.push_back(i);
+                res.push_back(m[target - nums[i]]);
+                return res;
+            }
+            m[nums[i]] = i;
+        }
+        return res;
+    }
+};
+```
+## 回溯算法
+
+## 树与二叉树
+
+### 108.将有序数组转换为二叉搜索树
+
+**题目分析**
+使用双指针法，确定数组的中值，递归的插入树中。
+```c++
+TreeNode*  creTre(vector<int> nums, int left, int right){
+    if (left > right) return NULL;
+    
+    int mid = (left + right) / 2;
+    TreeNode* root = new TreeNode(nums[mid]);
+    root->left = creTre(nums, left, mid - 1);
+    root->right = creTre(nums, mid + 1, right);
+    
+    return root;
+}
+```
+**题目解答**
+```c++
+class Solution {
+public:
+    TreeNode* creTre(vector<int> nums, int left, int right){
+        if (left > right) return NULL;
+        int mid = left + (right - left) / 2;
+        TreeNode* root = new TreeNode(nums[mid]);
+        root->left = creTre(nums, left, mid - 1); 
+        root->right = creTre(nums, mid + 1, right);
+
+        return root;
+    }
+
+    TreeNode* sortedArrayToBST(vector<int>& nums) {
+        return creTre(nums, 0, nums.size() - 1);
+    }
+};
+```
+
+## 字符串
+
+### 28.实现 strStr() (未完成)
+**题目分析**
+实际上就是实现一下kmp算法。
+
+**题目解答**
+```c++
+
+```
 
