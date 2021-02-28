@@ -21,7 +21,11 @@
 
 [684.冗余连接](https://github.com/875977494/LeetCode/blob/master/684.%E5%86%97%E4%BD%99%E8%BF%9E%E6%8E%A5.md)
 
+[697.数组的度]()
+
 [766.托普利茨矩阵]()
+
+[896.单调数列]()
 
 [989. 数组形式的整数加法](https://github.com/ZhangYiqun018/LeetCode/blob/master/989.%20%E6%95%B0%E7%BB%84%E5%BD%A2%E5%BC%8F%E7%9A%84%E6%95%B4%E6%95%B0%E5%8A%A0%E6%B3%95.%20md)
 
