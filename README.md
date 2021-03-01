@@ -5,6 +5,8 @@
 
 [19.删除链表的倒数第N个结点](https://github.com/ZhangYiqun018/LeetCode/blob/master/19.%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC%20N%20%E4%B8%AA%E7%BB%93%E7%82%B9.md)
 
+[50. Pow(x, n)]()
+
 [51.N皇后](https://github.com/875977494/LeetCode/blob/master/51.N%E7%9A%87%E5%90%8E.md)
 
 [52.N皇后II](https://github.com/875977494/LeetCode/blob/master/52.N%E7%9A%87%E5%90%8EII.md)
