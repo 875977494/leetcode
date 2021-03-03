@@ -17,7 +17,11 @@
 
 [303.区域和检索-数组不可变]()
 
+[338.比特位计数]()
+
 [605.种花问题](https://github.com/ZhangYiqun018/LeetCode/blob/master/605.%E7%A7%8D%E8%8A%B1%E9%97%AE%E9%A2%98.md)
+
+[617.合并二叉树]()
 
 [628.三个数的最大乘积](https://github.com/875977494/LeetCode/blob/master/628.%E4%B8%89%E4%B8%AA%E6%95%B0%E7%9A%84%E6%9C%80%E5%A4%A7%E4%B9%98%E7%A7%AF.md)
 
