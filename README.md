@@ -1,11 +1,11 @@
 # LeetCode
 开个坑 逐渐把题解搬进来
 
-[9.回文数]()
+[9.回文数](https://github.com/ZhangYiqun018/LeetCode/blob/master/9.%E5%9B%9E%E6%96%87%E6%95%B0.md)
 
 [19.删除链表的倒数第N个结点](https://github.com/ZhangYiqun018/LeetCode/blob/master/19.%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC%20N%20%E4%B8%AA%E7%BB%93%E7%82%B9.md)
 
-[50. Pow(x, n)](https://github.com/ZhangYiqun018/LeetCode/blob/master/50.Pow(x%2C%20n).md)
+[50.Pow(x, n)](https://github.com/ZhangYiqun018/LeetCode/blob/master/50.Pow(x%2C%20n).md)
 
 [51.N皇后](https://github.com/875977494/LeetCode/blob/master/51.N%E7%9A%87%E5%90%8E.md)
 
@@ -51,4 +51,4 @@
 
 [1584.连接所有点的最小费用](https://github.com/875977494/LeetCode/blob/master/1584.%20%E8%BF%9E%E6%8E%A5%E6%89%80%E6%9C%89%E7%82%B9%E7%9A%84%E6%9C%80%E5%B0%8F%E8%B4%B9%E7%94%A8.md)
 
-[1603.设计停车系统]()
+[1603.设计停车系统](https://github.com/ZhangYiqun018/LeetCode/blob/master/1603.%E8%AE%BE%E8%AE%A1%E5%81%9C%E8%BD%A6%E7%B3%BB%E7%BB%9F.md)
