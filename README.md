@@ -19,11 +19,15 @@
 
 [103.二叉树的锯齿形层序遍历](https://github.com/ZhangYiqun018/LeetCode/blob/master/103.%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%94%AF%E9%BD%BF%E5%BD%A2%E5%B1%82%E5%BA%8F%E9%81%8D%E5%8E%86.md)
 
+[150.逆波兰表达式]()
+
 [206.反转链表](https://github.com/ZhangYiqun018/LeetCode/blob/master/206.%20%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8.md)
 
 [303.区域和检索-数组不可变](https://github.com/ZhangYiqun018/LeetCode/blob/master/303.%E5%8C%BA%E5%9F%9F%E5%92%8C%E6%A3%80%E7%B4%A2%20-%20%E6%95%B0%E7%BB%84%E4%B8%8D%E5%8F%AF%E5%8F%98.%20%E5%8C%BA%E5%9F%9F%E5%92%8C%E6%A3%80%E7%B4%A2%20-%20%E6%95%B0%E7%BB%84%E4%B8%8D%E5%8F%AF%E5%8F%98.md)
 
 [338.比特位计数](https://github.com/ZhangYiqun018/LeetCode/blob/master/338.%E6%AF%94%E7%89%B9%E4%BD%8D%E8%AE%A1%E6%95%B0.md)
+
+[567.字符串的排列]
 
 [605.种花问题](https://github.com/ZhangYiqun018/LeetCode/blob/master/605.%E7%A7%8D%E8%8A%B1%E9%97%AE%E9%A2%98.md)
 
@@ -44,6 +48,8 @@
 [989. 数组形式的整数加法](https://github.com/ZhangYiqun018/LeetCode/blob/master/989.%20%E6%95%B0%E7%BB%84%E5%BD%A2%E5%BC%8F%E7%9A%84%E6%95%B4%E6%95%B0%E5%8A%A0%E6%B3%95.%20md)
 
 [1018. 可被 5 整除的二进制前缀](https://github.com/875977494/LeetCode/blob/master/1018.%20%E5%8F%AF%E8%A2%AB%205%20%E6%95%B4%E9%99%A4%E7%9A%84%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%89%8D%E7%BC%80.md)
+
+[1122.数组的相对排序 未完成]()
 
 [1128.等价多米诺骨牌对的数量](https://github.com/ZhangYiqun018/LeetCode/blob/master/1128.%E7%AD%89%E4%BB%B7%E5%A4%9A%E7%B1%B3%E8%AF%BA%E9%AA%A8%E7%89%8C%E5%AF%B9%E7%9A%84%E6%95%B0%E9%87%8F.md)
 
